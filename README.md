@@ -1,10 +1,8 @@
 # sxp-cloudy
 
-This repository contains results for nebular line emission due to the composite simple stellar population (SSP) and simple X-ray population (SXP) photoionization models presented in Garofali et al. 2023. The photoionization simulations are performed using ```Cloudy``` v17.02, and a modified version of ```cloudyfsps```: http://nell-byler.github.io/cloudyfsps/
+This repository contains results for nebular line emission due to the composite simple stellar population (SSP) and simple X-ray population (SXP) models presented in Garofali et al. 2023. The photoionization simulations were performed using ```Cloudy``` v17.02, and a modified version of ```cloudyfsps```: http://nell-byler.github.io/cloudyfsps/
 
-The output presented here is meant to enable quick inspection of the simulated SXP + SSP nebular line emission for different nebular emission line diagnostics.
-
-For detailed descriptions of the models and assumptions therein, please see Garofali et al. 2023. For questions about the simulation output, please contact kristen DOT garofali AT nasa DOT gov.
+The output presented here is meant to enable quick inspection of the simulated nebular line emission due to the composite models for user-defined line diagnostics. We also provide Table A.1 (nebular line list) in machine readable format. For detailed descriptions of the models and assumptions therein, please see Garofali et al. 2023. For questions about the simulation output, please contact kristen DOT garofali AT nasa DOT gov.
 
 ## sxp-ssp
 
@@ -20,4 +18,4 @@ This directory contains the simulation results for the SSP-only models (no SXP c
 
 ## demos
 
-This directory contains example code for plotting the full suite of simulated nebular line emission as a grid for various emission line diagnostics. The code presented here is adapted from existing functions in ```cloudyfsps```. For full functionality in interpreting and plotting simulation results, it is recommended that the user install and familiarize themselves with ```cloudyfsps```; however, the code presented here will work as a standalone for quick visualizations.
+This directory contains example code for plotting the full suite of simulated nebular line emission as a grid for user-defined emission line diagnostics. The code presented here is adapted from existing functions in ```cloudyfsps```. For full functionality in interpreting and plotting simulation results, it is recommended that the user install and familiarize themselves with ```cloudyfsps```; however, the code presented here will work as a standalone for quick visualizations.
