@@ -18,4 +18,6 @@ This directory contains the simulation results for the SSP-only models (no SXP c
 
 ## demos
 
-This directory contains example code for plotting the full suite of simulated nebular line emission as a grid for user-defined emission line diagnostics. The code presented here is adapted from existing functions in ```cloudyfsps```. For full functionality in interpreting and plotting simulation results, it is recommended that the user install and familiarize themselves with ```cloudyfsps```; however, the code presented here will work as a standalone for quick visualizations.
+This directory contains example code (```plot_grids.py```) for plotting the full suite of simulated nebular line emission as a grid for user-defined emission line diagnostics. The ```plot_grids.py``` demo can be run from the command line or in an interactive python environment. Running the code will interactively produce images for six emission line diagnostics corresponding to figures presented in Garofali et al. 2023; closing one figure will automatically advance to the next figure. The user can follow these examples to create their own emission line diagnostics for different lines and/or produce grids for different burst ages.
+
+The code presented here is adapted from existing functions in ```cloudyfsps```. For full functionality in interpreting and plotting simulation results, it is recommended that the user install and familiarize themselves with ```cloudyfsps```; however, the code presented here will work as a standalone for quick visualizations.
