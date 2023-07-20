@@ -215,8 +215,8 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 4703.01  [Fe III] 4703.01               Fe 3 4701.62A 0
 4712.65  [Ar IV] 4712.65                Ar 4 4711.26A 2
 4714.42  He I 4714.42                   He 1 4713.03A 0
-4741.52  [Ar IV] 4741.52                Ar 4 4740.12A 3
 4721.39  [Ne IV] 4721.39                Blnd 4720.00A 0
+4741.52  [Ar IV] 4741.52                Ar 4 4740.12A 3
 4756.04  [Fe III] 4756.04               Fe 3 4754.64A 0
 4862.76  H I (Ba-$\beta$) 4862.76       H  1 4861.33A 0
 4914.45  [O II] 4914.45                 O  2 4913.00A 0
@@ -284,7 +284,6 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 10126.2  He II 1.0126$\mu$m             He 2 1.01233m 3
 10289.7  [S II] 1.029$\mu$m             S  2 1.02867m 0
 10314.3  He I 1.0314$\mu$m              He 1 1.03113m 0
-10339.4  [S II] 1.0339$\mu$m            S  2 1.03364m 0
 10323.5  [S II] 1.0324$\mu$m            S  2 1.03205m 0
 10339.4  [S II] 1.0339$\mu$m            S  2 1.03364m 0
 10373.5  [S II] 1.0373$\mu$m            S  2 1.03705m 0
