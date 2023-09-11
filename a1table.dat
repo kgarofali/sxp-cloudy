@@ -14,7 +14,7 @@ Note (1): Flag indicating classification according to line strength. Flag as fol
   1 = strong line significantly enhanced by the addition of the SXP
   2 = strong line not significantly enhanced by the addition of the SXP
   3 = weak line significantly enhanced by the addition of SXP
-  4 = line with zero flux
+  4 = weak line (or line with zero flux) not significantly enhanced by the addition of SXP
 Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteria for strength (strong versus weak) is determined relative to H_beta or Pa_beta, and criteria for enhancement (significantly versus not significantly) is determined relative to SSP-only photoionization models, as described in Section 5.1 of Garofali et al. 2023.
 --------------------------------------------------------------------------------
 917.473  O I 917.473                    O  1 917.473A 0
@@ -72,7 +72,7 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 1036.80  C II 1036.8                    C  2 1036.80A 0
 1040.08  Mg II 1040.08                  Mg 2 1040.08A 0
 1071.32  Cl II 1071.32                  Cl 2 1071.32A 0
-1084.94  He II 1084.94                  He 2 1084.94A 2
+1084.94  He II 1084.94                  He 2 1084.94A 1
 1085.00  N II 1085.                     Blnd 1085.00A 0
 1086.27  S IV 1086.27                   S  4 1086.27A 0
 1092.50  C II 1092.5                    C  2 1092.50A 0
@@ -108,7 +108,7 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 1416.89  S IV 1416.89                   S  4 1416.89A 0
 1472.74  Ni II 1472.74                  Ni 2 1472.74A 0
 1484.97  Ni II 1484.97                  Ni 2 1484.97A 0
-1486.50  N IV] 1486.5                   N  4 1486.50A 3
+1486.50  N IV] 1486.5                   N  4 1486.50A 4
 1533.43  Si II 1533.43                  Si 2 1533.43A 0
 1548.19  C IV 1548.19                   C  4 1548.19A 2
 1550.78  C IV 1550.78                   C  4 1550.78A 2
@@ -127,7 +127,7 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 1751.83  Ni II 1751.83                  Ni 2 1751.83A 0
 1752.16  N III] 1752.16                 N  3 1752.16A 0
 1754.00  N III] 1754.                   N  3 1754.00A 0
-1814.56  [Ne III] 1814.56               Ne 3 1814.56A 3
+1814.56  [Ne III] 1814.56               Ne 3 1814.56A 2
 1816.93  Si II 1816.93                  Si 2 1816.93A 0
 1828.00  C III 1828.                    C  3 1828.00A 0
 1854.72  [Al III] 1854.72               Al 3 1854.72A 0
@@ -160,7 +160,7 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 2946.01  He I 2946.01                   He 1 2945.10A 0
 3110.13  [Ar III] 3110.13               Ar 3 3109.18A 0
 3188.71  He I 3188.71                   He 1 3187.74A 0
-3343.19  [Ne III] 3343.19               Ne 3 3342.18A 3
+3343.19  [Ne III] 3343.19               Ne 3 3342.18A 4
 3427.07  [Ne V] 3427.07                 Ne 5 3426.03A 3
 3448.63  He I 3448.63                   He 1 3447.59A 0
 3614.73  He I 3614.73                   He 1 3613.64A 0
@@ -216,12 +216,12 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 4712.65  [Ar IV] 4712.65                Ar 4 4711.26A 2
 4714.42  He I 4714.42                   He 1 4713.03A 0
 4721.39  [Ne IV] 4721.39                Blnd 4720.00A 0
-4741.52  [Ar IV] 4741.52                Ar 4 4740.12A 3
+4741.52  [Ar IV] 4741.52                Ar 4 4740.12A 2
 4756.04  [Fe III] 4756.04               Fe 3 4754.64A 0
 4862.76  H I (Ba-$\beta$) 4862.76       H  1 4861.33A 0
 4914.45  [O II] 4914.45                 O  2 4913.00A 0
 4923.38  He I 4923.38                   He 1 4921.93A 0
-4932.68  [O III] 4932.68                O  3 4931.23A 3
+4932.68  [O III] 4932.68                O  3 4931.23A 4
 4960.37  [O III] 4960.37                O  3 4958.91A 2
 5006.47  [N II] 5006.47                 N  2 5005.00A 0
 5008.31  [O III] 5008.31                O  3 5006.84A 2
@@ -251,14 +251,14 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 6732.78  [S II] 6732.78                 S  2 6730.82A 0
 7067.28  He I 7067.28                   He 1 7065.22A 0
 7137.87  [Ar III] 7137.87               Ar 3 7135.79A 0
-7172.79  [Ar IV] 7172.79                Ar 4 7170.70A 3
-7239.87  [Ar IV] 7239.87                Ar 4 7237.77A 3
-7265.44  [Ar IV] 7265.44                Ar 4 7263.33A 3
+7172.79  [Ar IV] 7172.79                Ar 4 7170.70A 4
+7239.87  [Ar IV] 7239.87                Ar 4 7237.77A 4
+7265.44  [Ar IV] 7265.44                Ar 4 7263.33A 4
 7283.47  He I 7283.47                   He 1 7281.35A 0
 7308.12  [Ca II] 7308.12                Blnd 7306.00A 0
 7325.13  [O II] 7325.13                 Blnd 7323.00A 0
 7334.13  [O II] 7334.13                 Blnd 7332.00A 0
-7334.28  [Ar IV] 7334.28                Ar 4 7332.15A 3
+7334.28  [Ar IV] 7334.28                Ar 4 7332.15A 4
 7532.73  [Cl IV] 7532.73                Cl 4 7530.54A 0
 7753.36  [Ar III] 7753.36               Ar 3 7751.11A 0
 7775.26  O I 7775.26                    O  1 7773.00A 0
@@ -339,7 +339,7 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 26258.9  H I (Br-$\beta$) 2.6259$\mu$m  H  1 2.62513m 0
 29053.4  [Al V] 2.9053$\mu$m            Al 5 2.90450m 3
 30392.2  H I (Pf-5) 3.0392$\mu$m        H  1 3.03835m 0
-32070.2  [Ca IV] 3.2070$\mu$m           Ca 4 3.20610m 3
+32070.2  [Ca IV] 3.2070$\mu$m           Ca 4 3.20610m 4
 32970.2  H I (Pf-$\delta$) 3.2970$\mu$m H  1 3.29607m 0
 36603.7  [Al VI] 3.6604$\mu$m           Al 6 3.65932m 3
 37036.7  He I 3.7037$\mu$m              He 1 3.70260m 0
@@ -360,7 +360,7 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 55033.5  [Mg VII] 5.5034$\mu$m          Mg 7 5.50177m 4
 56086.1  [Mg V] 5.6086$\mu$m            Mg 5 5.60700m 3
 59082.5  H I (Hu-$\gamma$) 5.9082$\mu$m H  1 5.90655m 0
-59820.2  K IV 5.9820$\mu$m              K  4 5.98030m 3
+59820.2  K IV 5.9820$\mu$m              K  4 5.98030m 4
 65147.5  [Si VII] 6.5148$\mu$m          Si 7 6.51288m 4
 69853.8  Ar II 6.9854$\mu$m             Ar 2 6.98337m 0
 73191.6  Na III 7.3192$\mu$m            Na 3 7.31706m 2
