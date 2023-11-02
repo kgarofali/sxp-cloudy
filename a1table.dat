@@ -207,7 +207,7 @@ Only lines with ionization potentials > 54 eV are marked with flags 1-4. Criteri
 4438.86  He I 4438.86                   He 1 4437.55A 0
 4472.81  He I 4472.81                   He 1 4471.49A 0
 4608.36  [O II] 4608.36                 O  2 4607.00A 0
-4622.94  [C  4622.94                    C  1 4621.57A 0
+4622.94  [C I]  4622.94                 C  1 4621.57A 0
 4650.37  [C III] 4650.37                C  3 4649.00A 0
 4659.39  [Fe III] 4659.39               Fe 3 4658.01A 0
 4670.63  [P II] 4670.63                 P  2 4669.25A 0
