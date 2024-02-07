@@ -21,17 +21,21 @@ mpl.rc('legend', labelspacing=0.1, handlelength=2, fontsize=16)
 # --- basic function for plotting grids ---
 def make_emline_diagnostic(gridP, gridS, xattr, yattr, xlab, ylab, cval):
 
-    '''
+    """
     plots a set of grids for chosen emission line diagnostic
 
-    gridP and gridS are python objects (as below), where gridS is the secondary grid to be plotted (appears as faded lines)
+    Args:
+        gridP (object): primary grid to be plotted
+        gridS (object): secondary grid to be plotted (appears as faded lines)
+        xattr (string): line ratio for the abscissa. This string must be defined in load_lines() in outObj.py to be recognized.
+        yattr (string): line ratio for the ordinate. This string must be defined in load_lines() in outObj.py to be recognized.
+        xlab (string): xaxis label
+        ylab (string): yaxis label
+        cval (float): "constant" value for plotting the grid; here this is age in units of yrs.
 
-    xattr and yattr are strings specifying the line ratios for the abscissa and ordinate, respectively. Note, these strings must be defined load_lines() in outObj.py following the examples here for this to work properly.
-
-    xlab and ylab are strings for plotting appropriate axis labels.
-
-    cval is the "constant" value for plotting the grid, in this case selected to be age in units of Myr.
-    '''
+    Returns:
+        Six figures showing the full model grids in logU and logZ at the selected cval (age) for a set of emission line diagnostics shown in Garofali et al. 2024. 
+    """
 
     fig, ax = plt.subplots(1, 1, figsize=(8,8))
     ucolors = nColors(len(gridP.logU_vals),

@@ -94,8 +94,11 @@ class modObj(object):
                  'CIVb': 1550.78,
                  'NIIa':6549.959,
                  'NIIb':6585.369,
+                 'OIIa': 3727.118,
+                 'OIIb': 3730.119,
                  'OIIIua': 1660.81,
                  'OIIIub': 1666.00,
+                 'OIIIa': 4960.37,
                  'OIIIb':5008.314,
                  'OIVi': 258906.4,
                  'NeIIi': 128137.9,
@@ -115,12 +118,14 @@ class modObj(object):
             matchind = np.argmin(np.abs(lam-wav))
             self.__setattr__(name, flu[matchind])
         def logify(a,b):
-            return np.log10(a/b)
+            with np.errstate(divide='ignore'):
+                return np.log10(a/b)
 
         #
         self.log_HeII_Hb = logify(self.HeII, self.Hb)
         self.log_HeIIu_CIII = logify(self.HeIIu, (self.CIIIua + self.CIIIub))
         #
+        self.log_CIII_HeIIu = logify((self.CIIIua + self.CIIIub), self.HeIIu)
         self.log_CIV_OIII = logify((self.CIVa + self.CIVb),
                                    (self.OIIIub + self.OIIIua))
         self.log_CIV_CIII = logify((self.CIVa + self.CIVb),
@@ -130,13 +135,16 @@ class modObj(object):
         self.log_NIIb_Ha = logify(self.NIIb, self.Ha)
         #
         self.log_OIIIb_Hb = logify(self.OIIIb, self.Hb)
+        self.log_OIII_Hb = logify((self.OIIIb + self.OIIIa), self.Hb)
         self.log_OIII_CIII = logify((self.OIIIua + self.OIIIub),
                                     (self.CIIIua + self.CIIIub))
+        self.log_OIIIub_HeIIu = logify(self.OIIIub,self.HeIIu)
         self.log_OIVi_NeIIIia = logify(self.OIVi, self.NeIIIia)
         #
         self.log_NeV_NeIIIb = logify(self.NeV, self.NeIIIb)
         self.log_NeIIIia_NeIIi = logify(self.NeIIIia, self.NeIIi)
         self.log_NeVia_NeIIIia = logify(self.NeVia, self.NeIIIia)
+        self.log_NeIIIb_OII = logify(self.NeIIIb, self.OIIa + self.OIIb)
 
         return
 
