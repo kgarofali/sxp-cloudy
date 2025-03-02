@@ -1,8 +1,8 @@
 # sxp-cloudy
 
-This repository contains results for nebular line emission due to the composite simple stellar population (SSP) and simple X-ray population (SXP) models presented in Garofali et al. 2023. The photoionization simulations were performed using ```Cloudy``` v17.02, and a modified version of ```cloudyfsps```: http://nell-byler.github.io/cloudyfsps/
+This repository contains results for nebular line emission due to the composite simple stellar population (SSP) and simple X-ray population (SXP) models presented in Garofali et al. 2024. The photoionization simulations were performed using ```Cloudy``` v17.02, and a modified version of ```cloudyfsps```: http://nell-byler.github.io/cloudyfsps/
 
-The output presented here is meant to enable quick inspection of the simulated nebular line emission due to the composite models for user-defined line diagnostics. We also provide Table A.1 (nebular line list) in machine readable format. For detailed descriptions of the models and assumptions therein, please see Garofali et al. 2024. For questions about the simulation output, please contact kristen DOT garofali AT nasa DOT gov.
+The output presented here is meant to enable quick inspection of the simulated nebular line emission due to the composite models for user-defined line diagnostics. We also provide Table A.1 (nebular line list) in machine readable format. For detailed descriptions of the models and assumptions therein, please see Garofali et al. 2024. For questions about the simulation output, please contact kgarofali AT nas DOT edu or antara DOT r DOT basu-zych AT nasa DOT gov. 
 
 ## sxp-ssp
 
